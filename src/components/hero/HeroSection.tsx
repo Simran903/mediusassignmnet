@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import HeroImage from '../../../public/hero-variant-c.webp'
-import googleIcon from  '../../../public/google-icon.png'
+import HeroImage from '@/../../public/hero-variant-c.webp';
+import googleIcon from  '@/../../public/google-icon.png';
 import './hero.css';
 
 const HeroSection: React.FC = () => {

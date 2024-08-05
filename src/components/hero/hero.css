@@ -1,9 +1,11 @@
 .hero-main {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 71 51 / var(--tw-bg-opacity));
   }
   
   .hero-content {
