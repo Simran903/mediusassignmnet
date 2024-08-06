@@ -48,7 +48,7 @@
   color: rgb(0 71 51);
   --tw-text-opacity: 1;
   color: rgb(1 120 72/var(--tw-text-opacity));
-  transition: ease 0.5s;
+  transition: ease 0.1s;
 }
 
 .testimonial-right {

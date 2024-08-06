@@ -1,0 +1,78 @@
+.qnaMain {
+  padding: 0 15rem;
+  height: 100vh;
+}
+
+.qnaHeading {
+  font-size: 3rem;
+}
+
+.qnaSubheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.qnaSubheading h1 {
+  font-size: 3rem;
+}
+
+.qnaSelector {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.button:hover {
+  border-color: #000;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #f0f8f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  flex: 1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
