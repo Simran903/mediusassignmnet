@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .qnaSubheading h1 {
@@ -24,16 +23,28 @@
 }
 
 .button {
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid gray;
+  background: none;
   cursor: pointer;
-  background-color: transparent;
   font-size: 1rem;
+  border-radius: 9999px;
+}
+
+.button:active {
+  border: 5px solid rgb(1 120 72/var(--tw-text-opacity));
+  color: rgb(0 71 51);
+  --tw-text-opacity: 1;
+  color: rgb(1 120 72/var(--tw-text-opacity));
 }
 
 .button:hover {
-  border-color: #000;
+  border: 5px solid rgb(1 120 72/var(--tw-text-opacity));
+  color: rgb(0 71 51);
+  --tw-text-opacity: 1;
+  color: rgb(1 120 72/var(--tw-text-opacity));
+  transition: ease 0.1s;
 }
 
 .gridContainer {
