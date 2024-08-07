@@ -38,32 +38,35 @@ const qnas: Record<string, QNAS> = {
 
 const QNA: React.FC = () => {
   return (
-    <div className="qnaMain">
-      <h1 className="qnaHeading">Got questions?</h1>
-      <div className="qnaSubheading">
-        <h1>We&apos;ve got answers</h1>
-        <div className="qnaSelector">
-          <button className="button">Our products</button>
-          <button className="button">Calculators</button>
-          <button className="button">Guides & FAQs</button>
+    <div className="">
+      <div className="qnaMain">
+        <h1 className="qnaHeading">Got questions?</h1>
+        <div className="qnaSubheading">
+          <h1>We&apos;ve got answers</h1>
+          <div className="qnaSelector">
+            <button className="button">Our products</button>
+            <button className="button">Calculators</button>
+            <button className="button">Guides & FAQs</button>
+          </div>
+        </div>
+        <div className="gridContainer">
+          {Object.values(qnas).map((qna, index) => (
+            <div key={index} className="card">
+              <h2>{qna.heading}</h2>
+              <p>{qna.content}</p>
+              <div className="arrow">&rarr;</div>
+              <Image
+                src={qna.image}
+                alt={qna.heading}
+                className="image"
+                width={200}
+                height={200}
+              />
+            </div>
+          ))}
         </div>
       </div>
-      <div className="gridContainer">
-        {Object.values(qnas).map((qna, index) => (
-          <div key={index} className="card">
-            <h2>{qna.heading}</h2>
-            <p>{qna.content}</p>
-            <div className="arrow">&rarr;</div>
-            <Image
-              src={qna.image}
-              alt={qna.heading}
-              className="image"
-              width={200}
-              height={200}
-            />
-          </div>
-        ))}
-      </div>
+      <hr />
     </div>
   );
 };

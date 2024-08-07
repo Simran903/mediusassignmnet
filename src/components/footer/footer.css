@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer-main {
+    padding: 10rem 8rem 0 8rem;
+    font-family: 'Roboto', sans-serif;
+    /* height: 100vh; */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1fr 1.5fr;
+    gap: 5rem;
+}
+
+.footer-section {
+    padding: 10px 20px;
+}
+
+.footer-section h5 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgba(41, 43, 41, 0.897);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgba(41, 43, 41, 0.897);
+    padding-top: 0.75rem;
+    word-spacing: 3px;
+}
+
+.footer-para {
+    font-size: 14px;
+    color: rgba(41, 43, 41, 0.897);
+    padding-top: 0.5rem;
+    margin-bottom: 20px;
+    line-height: 20px;
+
+}
+
+.footer-links .footer-title {
+    font-weight: bold;
+    /* display: block; */
+    margin-bottom: 5px;
+}
+
+.footer-para1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgba(41, 43, 41, 0.897);
+    margin-top: 0.75rem;
+}
+
+.footer-conditions {
+    color: rgba(41, 43, 41, 0.897);
+    padding: 300px 20px 20px 20px;
+}
+
+.footer-socials>svg{
+   margin: 0 10px 40px 0;
+}
+
+.footer-conditions p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0.75rem;
+    word-spacing: 3px;
+    line-height: 18px;
+}
+
+.footer-licensing {
+    color: rgba(41, 43, 41, 0.897);
+    padding: 10px 20px;
+}
+
+.footer-licensing p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0.75rem;
+    line-height: 18px;
+}
