@@ -45,7 +45,7 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
       <div className="testimonial-right">
-        <div className="testimonial-header">Find out why we’re better.</div>
+        <div className="testimonial-header">Find out why we&apos;re better.</div>
         <button className="testimonial-button">See all our stories</button>
         <p className="testimonial-rating">
           <span className="testimonial-trustpilot">Trustpilot</span> Excellent{" "}

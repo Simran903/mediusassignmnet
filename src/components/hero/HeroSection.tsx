@@ -1,5 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React,{lazy} from 'react';
+
+const Image = lazy(() => import('next/image'))
+// import Image from 'next/image';
 import HeroImage from '@/../../public/hero-variant-c.webp';
 import googleIcon from  '@/../../public/google-icon.png';
 import './hero.css';
@@ -8,8 +10,8 @@ const HeroSection: React.FC = () => {
   return (
     <main className="hero-main">
       <div className="hero-content">
-        <h1 className="hero-title">
-          <span>Mortgages</span><span>made simple</span>
+        <h1 className="hero-title" style={{zIndex: 9999}}>
+          <span style={{zIndex: 9999}}>Mortgages</span><span style={{zIndex: 9999}}>made simple</span>
         </h1>
         <div className="hero-ratting-section">
 
@@ -18,9 +20,7 @@ const HeroSection: React.FC = () => {
               Start my approval
             </button>
             <p className="hero-text">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="hero-icon">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+         
               3 min | No credit impact
             </p>
           </div>
@@ -40,14 +40,14 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="hero-image-wrapper">
+      <div className="hero-image-wrapper" style={{zIndex: "1 !important"}}>
         <div className="hero-image-container">
           <Image 
             src={HeroImage} 
             alt="Phone displaying mortgage approval" 
             width={500} 
             height={600}
-            style={{background: 'none', zIndex: "1"}}
+            style={{background: 'none',position: "relative"}}
           />
         </div>
       </div>
